@@ -1,0 +1,16 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main(){
+     long int r,w,l;
+    cin>>r>>w>>l;
+    if(sqrt(w*w+l*l)<=2*r){
+        cout<<"YES";}
+        else{
+            cout<<"NO";}
+    
+    
+    
+    
+    
+}
