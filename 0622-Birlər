@@ -1,0 +1,6 @@
+k=0
+n=int(input())
+while(n>0):
+    k += (n%2)/2
+    n = n/2
+print(round(k))
