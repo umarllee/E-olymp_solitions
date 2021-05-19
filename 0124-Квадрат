@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main(){
+     int n,S,P;
+    while(cin>>n){
+    P=4*n;
+    S=n*n;
+    cout<<P<<" "<<S<<"\n";}
+     return 0;
+  
+
+    
+}
