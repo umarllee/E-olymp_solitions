@@ -1,0 +1,22 @@
+#include <iostream>
+#include <math.h>
+#include <iomanip>
+using namespace std;
+
+void eded( int a,int b,int c)
+{
+  if((a>b&&a<c)||(a<b&&a>c)){
+        cout<<a;}
+    else if((b>a&&b<c)||(a>b&&c<b)){
+        cout<<b;}
+        else {
+            cout<<c;}
+    
+}
+
+int main()
+{
+ long int x,y,z;
+ cin>>x>>y>>z;
+ eded(x,y,z);
+}
