@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+   long long  int h,w,l,k,v;
+    cin>>h>>w>>l>>k;
+    v=h*w*l;
+    cout<<(v+k-1) / k;
+    
+    return 0;
+
+}
