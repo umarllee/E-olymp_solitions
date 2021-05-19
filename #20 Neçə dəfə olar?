@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int reqem(int n)
+{ int m,cem=0;
+	while(n!=0){
+		m=n%10;
+		n/=10;
+		cem+=m;
+	}
+	return cem;
+	
+}
+
+int main() 
+{
+	int n;
+	cin>>n;
+	int say=0;
+	 while(n>0){
+	 	n=n-reqem(n);
+	 	say++;
+	 }
+	 cout<<say;
+}
