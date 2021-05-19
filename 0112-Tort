@@ -1,0 +1,16 @@
+#include <iostream>
+#include <math.h>
+#include <iomanip>
+using namespace std;
+int main()
+{
+ double  t1,t2,t3;
+ double z;
+ cin>>t1>>t2>>t3;
+ z=(t1*t2*t3)/(t1*t2+t1*t3+t2*t3);
+ if(t1==0||t2==0||t3==0) cout<<0;
+ else cout<<fixed<<setprecision(2)<<z;
+ 
+ 
+ 
+}
