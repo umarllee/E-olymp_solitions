@@ -1,0 +1,15 @@
+#include <iostream>
+#include <stdio.h>
+#include <math.h>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+    int a,b,c;
+    cin>>a>>b>>c;
+    double p=(a+b+c)/2.0;
+ 
+   cout<<fixed<<setprecision(2)<<(2*sqrt(p*(p-a)*(p-b)*(p-c)))/a<<" "<<(2*sqrt(p*(p-a)*(p-b)*(p-c)))/b<<" "<<(2*sqrt(p*(p-a)*(p-b)*(p-c)))/c;
+
+}
