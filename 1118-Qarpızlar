@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   long int i,j,n;
+    cin>>n;
+    int a[n];
+    for(i=0;i<n;i++)
+    cin>>a[i];
+   if(n>1) {
+    int mx=a[0],mn=a[0];
+    
+    for(i=0;i<n;i++)
+    {
+        if(a[i]>mx)  mx=a[i];
+        if(a[i]<mn)  mn=a[i];
+    }
+    cout<<mn<<" "<<mx;}
+    else{
+        cout<<"Ooops!";}
+        
+    
+}
