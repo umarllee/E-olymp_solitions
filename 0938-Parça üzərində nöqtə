@@ -1,0 +1,17 @@
+#include <iostream>
+#include <math.h>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+ int  x1,x2,y1,y2;
+   cin>>x1>>y1>>x2>>y2;
+   float  a;
+   cin>>a;
+   double x=(x1+a*x2)/(1+a);
+   double y=(y1+a*y2)/(1+a);
+  cout<<fixed<<setprecision(2)<<x<<" "<<y;
+   
+   return 0;
+}
