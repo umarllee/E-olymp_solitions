@@ -1,0 +1,17 @@
+#include <iostream>
+#include <math.h>
+#include <iomanip>
+using namespace std;
+
+void eded( int n)
+{
+   cout<<fixed<<setprecision(3)<<sqrt((n/100)+((n/10)%10)+(n%10));
+    
+}
+
+int main()
+{
+ long int a;
+ cin>>a;
+ eded(a);
+}
