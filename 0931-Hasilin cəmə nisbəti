@@ -1,0 +1,30 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+double hasil(int n){
+      int h=1;
+  while(n!=0){
+      h*=n%10;
+      n=n/10;
+  }
+  return h;
+  }
+  
+  int cem(int n){
+      int c=0;
+      while(n!=0){
+          c+=n%10;
+          n=n/10;
+      }
+      return c;
+  }
+int main()
+{
+int n;
+cin>>n;
+double d;
+d=hasil(n)/cem(n);
+cout<<fixed<<setprecision(3)<<d;
+return 0;
+}
