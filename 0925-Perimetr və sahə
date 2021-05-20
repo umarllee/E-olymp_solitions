@@ -1,0 +1,28 @@
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+
+using namespace std;
+
+ void  heron(double x1,double y1,double x2,double y2,double x3,double y3)
+{
+    double a,b,c;
+    a=sqrt(pow(x2-x1,2)+pow(y2-y1,2));
+    b=sqrt(pow(x3-x2,2)+pow(y3-y2,2));
+    c=sqrt(pow(x3-x1,2)+pow(y3-y1,2));
+    
+    double p,s;
+    p=a+b+c;
+    s=sqrt((a+b+c)*(a+b-c)*(a+c-b)*(b+c-a))/4;
+    cout<<fixed<<setprecision(4)<<p<<" "<<s;
+   
+    
+}
+
+int main()
+{
+  long double a,b,c,d,e,f;
+  cin>>a>>b>>c>>d>>e>>f;
+  heron(a,b,c,d,e,f);
+
+}
