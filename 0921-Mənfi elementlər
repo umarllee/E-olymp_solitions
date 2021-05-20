@@ -1,0 +1,20 @@
+#include <iomanip>
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int h,i,s=0;
+    cin>>h;
+    
+    double a,c=0;
+    for(i=0;i<h;i++){
+        
+        cin>>a;
+        if(a<0){
+            s++;
+            c=c+a;
+        }
+    }
+    cout<<s<<" "<<fixed<<setprecision(2)<<c;
+}
