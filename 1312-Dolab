@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+   int a,b,c,x,y;
+   cin>>a>>b>>c>>x>>y;
+   if((a<=x&&b<=y)||(a<=y&&b<=x)||(a<=x&&c<=y)||(a<=y&&c<=x)||(b<=x&&c<=y)||(b<=y&&c<=x)){
+       cout<<"YES";}
+       else{
+           cout<<"NO";}
+   
+ 
+}
