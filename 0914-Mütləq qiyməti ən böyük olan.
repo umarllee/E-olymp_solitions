@@ -1,0 +1,5 @@
+n=int(input())
+a = list(map(float,input().strip().split()))[:n]
+b=list(map(abs, a))
+b.sort()
+print('%.2f'%(b[-1]))
