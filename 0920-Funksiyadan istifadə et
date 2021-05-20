@@ -1,0 +1,23 @@
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+
+using namespace std;
+
+void  heron(double x,double y,double z)
+{
+    double min1, max1, max2, n;
+    max1=max(x,y);
+    max2=max(y,z); 
+    min1=min(max1,max2); 
+    n=x+y+z; 
+    min1=min(min1,n);
+    cout<<fixed<<setprecision(2)<<min1;
+}
+
+int main()
+{
+  double a,b,c;
+  cin>>a>>b>>c;
+  heron(a,b,c);
+}
